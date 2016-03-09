@@ -8,6 +8,9 @@
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+		<!--Select Styles from Bootstrap 4.0.0-alpha -->
+		<link rel="stylesheet" href="lib/css/bootstrap-4-alpha-utils.css">
+
 		<!--fontawesome-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -122,7 +125,7 @@
 											<div class="input-group">
 												<input type="text" class="form-control" placeholder="">
 												<div class="input-group-btn">
-													<button class="btn btn-secondary"><i class="fa fa-search"></i></button>
+													<button class="btn btn-default"><i class="fa fa-search"></i></button>
 												</div>
 											</div>
 										</form>
@@ -161,7 +164,7 @@
 						</div>
 					</div><!--/.row-->
 					<div id="home-tiles" class="row p-t-1">
-						<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+						<div class="col-md-3 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
 							<div id="home-tile-1" class="card card-fancy animated">
 								<div class="card-block">
 									<h4 class="card-title"><span>Chronic Pain</span></h4>
@@ -171,13 +174,13 @@
 											<i class="fa fa-bolt fa-stack-1x"></i>
 										</span>
 										<p>Where pain really comes from, and how to deal with it once and for all.</p>
-										<a href="#" class="btn btn-secondary btn-sm">Read More</a>
+										<a href="#" class="btn btn-primary">Read More</a>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+						<div class="col-md-3 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
 							<div id="home-tile-2" class="card card-fancy animated">
 								<div class="card-block">
 									<h4 class="card-title"><span>Trauma</span></h4>
@@ -187,13 +190,13 @@
 											<i class="fa fa-heart-o fa-stack-1x"></i>
 										</span>
 										<p>Explore how to relieve trauma and long-term stress in a fast paced world.</p>
-										<a href="#" class="btn btn-secondary btn-sm">Read More</a>
+										<a href="#" class="btn btn-primary">Read More</a>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+						<div class="col-md-3 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
 							<div id="home-tile-3" class="card card-fancy animated">
 								<div class="card-block">
 									<h4 class="card-title"><span>The Science</span></h4>
@@ -203,13 +206,13 @@
 											<i class="fa fa-user-md fa-stack-1x"></i>
 										</span>
 										<p>Cutting edge research on physiology, PTSD, stress, and pain relief.</p>
-										<a href="#" class="btn btn-secondary btn-sm">Read More</a>
+										<a href="#" class="btn btn-primary">Read More</a>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+						<div class="col-md-3 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
 							<div id="home-tile-4" class="card card-fancy animated">
 								<div class="card-block">
 									<h4 class="card-title"><span>Articles</span></h4>
@@ -219,7 +222,7 @@
 											<i class="fa fa-newspaper-o fa-stack-1x"></i>
 										</span>
 										<p>Read our original articles and content at the AlignUp blog.</p>
-										<a href="#" class="btn btn-secondary btn-sm">Read More</a>
+										<a href="#" class="btn btn-primary">Read More</a>
 									</div>
 								</div>
 							</div>
