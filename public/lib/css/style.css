@@ -1,0 +1,111 @@
+/***********************************
+* Globals
+************************************/
+body {
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+}
+
+/***********************************
+* Utilities
+************************************/
+.bg-gray {
+	background-color: #ddd;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.bg-color-primary {
+	background-color: orchid;
+}
+
+.opacity-0 {
+	opacity: 0;
+}
+
+/***
+* Flexbox Sticky Footer
+* http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+***/
+/*corrects IE min-height bug*/
+html {
+	display: flex;
+}
+
+body {
+	width: 100%;
+}
+
+.sfooter {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.sfooter-content {
+	flex: 1 0 auto;
+}
+
+/***********************************
+* Theme Components
+************************************/
+.feature-text {
+	font-family: "Nothing You Could Do", sans-serif;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	color: darkgrey;
+	font-weight: bold; }
+
+.gradient-bg {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.35+0,0+30 */
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.35) 0%, transparent 30%, transparent 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.35) 0%, transparent 30%, transparent 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, transparent 30%, transparent 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', endColorstr='#00000000',GradientType=0 );
+	/* IE6-9 */ }
+
+/***********************************
+* Home Layout
+************************************/
+
+/***********************************
+* Content Layout
+************************************/
+
+/***********************************
+* Header
+************************************/
+
+/***********************************
+* Navbar
+************************************/
+
+/***********************************
+* Forms
+************************************/
+
+/***********************************
+* Footer
+************************************/
+footer.footer {
+	color: #fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#da70d6+0,bf1aa9+100 */
+	background: orchid;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, orchid 0%, #bf1aa9 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, orchid 0%, #bf1aa9 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, orchid 0%, #bf1aa9 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da70d6', endColorstr='#bf1aa9',GradientType=0 );
+	/* IE6-9 */ }

@@ -46,79 +46,71 @@
 
 			<div class="welcome-wrap sfooter">
 				<div class="gradient-bg sfooter-content p-y-4">
-					<!--header-->
+
 					<header>
-						<nav class="navbar navbar-dark navbar-fixed-top">
+						<nav class="navbar navbar-default navbar-fixed-top">
 							<div class="container">
-								<div class="row">
-									<div class="col-xs-12">
-										<!--social icons-->
-										<ul class="nav navbar-nav">
-											<li class="nav-item nav-icon">
-												<a class="nav-link icon" href="#">
-													<span class="sr-only">facebook</span>
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+
+									<!--social icons-->
+									<ul class="nav navbar-nav social-nav">
+										<li class="nav-item nav-icon">
+											<a class="nav-link icon" href="#">
+												<span class="sr-only">facebook</span>
 												<span class="fa-stack">
 													<i class="fa fa-circle fa-stack-2x"></i>
 													<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 												</span>
-												</a>
-											</li>
-											<li class="nav-item nav-icon">
-												<a class="nav-link icon" href="#">
-													<span class="sr-only">YouTube</span>
+											</a>
+										</li>
+										<li class="nav-item nav-icon">
+											<a class="nav-link icon" href="#">
+												<span class="sr-only">YouTube</span>
 												<span class="fa-stack">
 													<i class="fa fa-circle fa-stack-2x"></i>
 													<i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
 												</span>
-												</a>
-											</li>
-											<li class="nav-item nav-icon">
-												<a class="nav-link icon" href="#">
-													<span class="sr-only">instagram</span>
+											</a>
+										</li>
+										<li class="nav-item nav-icon">
+											<a class="nav-link icon" href="#">
+												<span class="sr-only">instagram</span>
 												<span class="fa-stack">
 													<i class="fa fa-circle fa-stack-2x"></i>
 													<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
 												</span>
-												</a>
-											</li>
-											<li class="nav-item nav-icon">
-												<a class="nav-link icon" href="#">
-													<span class="sr-only">twitter</span>
+											</a>
+										</li>
+										<li class="nav-item nav-icon">
+											<a class="nav-link icon" href="#">
+												<span class="sr-only">twitter</span>
 												<span class="fa-stack">
 													<i class="fa fa-circle fa-stack-2x"></i>
 													<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
 												</span>
-												</a>
-											</li>
-										</ul>
+											</a>
+										</li>
+									</ul><!--/.social-icons-->
+								</div><!--/.navbar-header-->
 
-										<!--toggle button-->
-										<button class="navbar-toggler hidden-lg-up pull-xs-right btn btn-secondary-outline" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">&#9776;</button>
-
-										<!--nav links-->
-										<div class="collapse navbar-toggleable-md clear-xs pull-xs-right" id="exCollapsingNavbar2">
-											<ul class="nav navbar-nav">
-												<li class="nav-item">
-													<a class="nav-link" href="#"><i class="fa fa-home"></i></a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link" href="#">About Me</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link" href="#">Work With Me</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link" href="#">Articles</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link" href="#">Testimonials</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+									<ul class="nav navbar-nav navbar-right">
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+									</ul>
+								</div><!-- /.navbar-collapse -->
+							</div><!-- /.container-fluid -->
 						</nav>
+
 						<div class="container">
 							<div class="row p-y-2">
 								<div class="col-sm-8 col-md-9">
