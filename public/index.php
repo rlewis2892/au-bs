@@ -1,526 +1,300 @@
-<!doctype html>
-<!--[if lt IE 7 ]><html itemscope itemtype="http://schema.org/Product" id="ie6" class="ie ie-old" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
-<!--[if IE 7 ]>   <html itemscope itemtype="http://schema.org/Product" id="ie7" class="ie ie-old" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
-<!--[if IE 8 ]>   <html itemscope itemtype="http://schema.org/Product" id="ie8" class="ie ie-old" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
-<!--[if IE 9 ]>   <html itemscope itemtype="http://schema.org/Product" id="ie9" class="ie" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
-<!--[if gt IE 9]><!--><html itemscope itemtype="http://schema.org/Product" lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
-<head>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <!--
-       d888888o.       ,o888888o.        ,o888888o. 8888888 8888888888 ,o888888o.    8 8888        8
-     .`8888:' `88.    8888     `88.   . 8888     `88.     8 8888      8888     `88.  8 8888        8
-     8.`8888.   Y8 ,8 8888       `8. ,8 8888       `8b    8 8888   ,8 8888       `8. 8 8888        8
-     `8.`8888.     88 8888           88 8888        `8b   8 8888   88 8888           8 8888        8
-      `8.`8888.    88 8888           88 8888         88   8 8888   88 8888           8 8888        8
-       `8.`8888.   88 8888           88 8888         88   8 8888   88 8888           8 8888        8
-        `8.`8888.  88 8888           88 8888        ,8P   8 8888   88 8888           8 8888888888888
-    8b   `8.`8888. `8 8888       .8' `8 8888       ,8P    8 8888   `8 8888       .8' 8 8888        8
-    `8b.  ;8.`8888    8888     ,88'   ` 8888     ,88'     8 8888      8888     ,88'  8 8888        8
-     `Y8888P ,88P'     `8888888P'        `8888888P'       8 8888       `8888888P'    8 8888        8
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    8 888888888o       ,o888888o.  `8.`8888.      ,8'
-    8 8888    `88.  . 8888     `88. `8.`8888.    ,8'
-    8 8888     `88 ,8 8888       `8b `8.`8888.  ,8'
-    8 8888     ,88 88 8888        `8b `8.`8888.,8'
-    8 8888.   ,88' 88 8888         88  `8.`88888'
-    8 8888888888   88 8888         88  .88.`8888.
-    8 8888    `88. 88 8888        ,8P .8'`8.`8888.
-    8 8888      88 `8 8888       ,8P .8'  `8.`8888.
-    8 8888    ,88'  ` 8888     ,88' .8'    `8.`8888.
-    8 888888888P       `8888888P'  .8'      `8.`8888.
-    -->
-    <title>Scotch Box ♥ A Vagrant LAMP Stack for Beginners That Just Works</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<!--fontawesome-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="http://scotch.io/favicon.ico">
+		<!--google fonts-->
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,700italic,300,300italic|Nothing+You+Could+Do' rel='stylesheet' type='text/css'/>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400,300|Pathway+Gothic+One">
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style>
-        ::selection {
-            background: #000;
-            color: #fff;
-        }
-        ::-moz-selection {
-            background: #000;
-            color: #fff;
-        }
-        body {
-            font-family: 'Pathway Gothic One', sans-serif;
-            height: 2000px;
-        }
-        a {
-            -webkit-transition: all 310ms ease;
-            -moz-transition: all 310ms ease;
-            transition: all 310ms ease;
-            text-decoration: none !important;
-        }
-        section {
-            position: relative;
-        }
-        #topper {
-            margin-top: 51px;
-            height: 450px;
-            text-align: center;
-        }
-        #topper svg {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-        }
-        #topper h1 {
-            position: absolute;
-            color: #fff;
-            left: 50%;
-            top: 50%;
-            -o-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            margin: 0;
-            font-size: 80px;
-            text-transform: uppercase;
-        }
-        #topper h1 i {
-            color: rgb(255, 157, 157);
-        }
-        article {
-            padding: 50px 0;
-        }
-        article table {
-            background: #e3e3e3;
-        }
-        article .content .wrap {
-            background: rgba(255, 27, 53, 0.8);
-            margin-bottom: 50px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        article .content .wrap h2 {
-            margin: 10px 0 15px;
-            color: #fff;
-        }
-        article .content .wrap td {
-            font-size: 20px;
-        }
-        article .fa-times {
-            color: rgb(255, 69, 69);
-        }
-        article .fa-check {
-            color: rgb(0, 179, 64);
-        }
-        #site-footer {
-            background: #05003D;
-            padding: 100px 0;
-            color: #e3e3e3;
-            font-size: 35px;
-        }
-        #site-footer a {
-            color: #fff;
-        }
-        #site-footer a:hover {
-            color: rgb(144, 255, 184);
-        }
-    </style>
+		<!--animate.css-->
+		<link rel="stylesheet" href="lib/animate/animate.min.css"/>
 
-</head>
-<body>
+		<!--custom style sheet-->
+		<link rel="stylesheet" type="text/css" href="lib/css/style.css"/>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Scotch Box</a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav pull-right">
-                    <li><a href="http://box.scotch.io">Docs</a></li>
-                    <li><a href="http://github.com/scotch-io/scotch-box">Star on GitHub</a></li>
-                    <li><a href="http://scotch.io">Scotch.io</a></li>
-                    <li><a href="https://twitter.com/scotch_io">@scotch_io</a></li>
-                    <li><a href="https://twitter.com/nickforthought">@nickforthought</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-    <section id="topper" style="background-image: url('data:image/svg+xml;base64,<?php echo base64_encode('<svg xmlns="http://www.w3.org/2000/svg" version="1.1"><defs id="defs4"><filter color-interpolation-filters="sRGB" id="filter3115"><feTurbulence type="fractalNoise" numOctaves="1" baseFrequency="0.9" id="feTurbulence3117"/><feColorMatrix result="result5" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -4.15 " id="feColorMatrix3119"/><feComposite in2="result5" operator="in" in="SourceGraphic" result="result6" id="feComposite3121"/><feMorphology in="result6" operator="dilate" radius="1" result="result3" id="feMorphology3123"/></filter></defs><rect width="100%" height="100%" x="0" y="0" id="rect2985" fill="#000000"/><rect width="100%" height="100%" x="0" y="0" id="rect2985" style="fill:#FF4343;filter:url(#filter3115)"/></svg>'); ?>');">
-        <h1>Welcome to<br>Scotch Box 2.5 <i class="fa fa-heart"></i></h1>
-    </section>
+		<!-- jQuery (required for Bootstap's JS plugins) -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-    <article>
-        <div class="container">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>System Stuff</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <tr>
-                            <td>OS</td>
-                            <td>Ubuntu 14.04 LTS (Trusty Tahr) </td>
-                        </tr>
-                        <tr>
-                            <td>PHP Version</td>
-                            <td><?php echo phpversion(); ?></td>
-                        </tr>
-                        <tr>
-                            <td>Ruby 2.2.x</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Vim</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Git</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>cURL</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Imagick</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Composer</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Beanstalkd</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Node</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>NPM</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+		<!--waypoints.js-->
+		<script type="text/javascript" src="lib/waypoints/jquery.waypoints.min.js"></script>
 
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>Database Stuff</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <?php
-                        $mysql_exists = FALSE;
-                        if (extension_loaded('mysql') or extension_loaded('mysqli')) :
-                            $mysql_exists = TRUE;
-                        endif;
-                        $mysqli = @new mysqli('localhost', 'root', 'root');
-                        $mysql_running = TRUE;
-                        if (mysqli_connect_errno()) {
-                            $mysql_running = FALSE;
-                        } else {
-                            $mysql_version = $mysqli->server_info;
-                        }
+		<!--custom js-->
+		<script type="text/javascript" src="lib/js/magic.js"></script>
 
-                        $mysqli->close();
-                        ?>
-                        <tr>
-                            <td>MySQL is installed</td>
-                            <td><i class="fa fa-<?php echo ($mysql_exists ? 'check' : 'times'); ?>"></i></td>
-                        </tr>
-                        <tr>
-                            <td>MySQL is connected</td>
-                            <td><i class="fa fa-<?php echo ($mysql_running ? 'check' : 'times'); ?>"></i></td>
-                        </tr>
-                        <tr>
-                            <td>MySQL Version</td>
-                            <td><?php echo ($mysql_running ? $mysql_version : 'N/A'); ?></td>
-                        </tr>
+		<title>BS 3 Home Page Mockup</title>
+	</head>
+	<body class="sfooter">
+		<div class="sfooter-content">
 
+			<div class="welcome-wrap sfooter">
+				<div class="gradient-bg sfooter-content p-y-4">
+					<!--header-->
+					<header>
+						<nav class="navbar navbar-dark navbar-fixed-top">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-12">
+										<!--social icons-->
+										<ul class="nav navbar-nav">
+											<li class="nav-item nav-icon">
+												<a class="nav-link icon" href="#">
+													<span class="sr-only">facebook</span>
+												<span class="fa-stack">
+													<i class="fa fa-circle fa-stack-2x"></i>
+													<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+												</span>
+												</a>
+											</li>
+											<li class="nav-item nav-icon">
+												<a class="nav-link icon" href="#">
+													<span class="sr-only">YouTube</span>
+												<span class="fa-stack">
+													<i class="fa fa-circle fa-stack-2x"></i>
+													<i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+												</span>
+												</a>
+											</li>
+											<li class="nav-item nav-icon">
+												<a class="nav-link icon" href="#">
+													<span class="sr-only">instagram</span>
+												<span class="fa-stack">
+													<i class="fa fa-circle fa-stack-2x"></i>
+													<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+												</span>
+												</a>
+											</li>
+											<li class="nav-item nav-icon">
+												<a class="nav-link icon" href="#">
+													<span class="sr-only">twitter</span>
+												<span class="fa-stack">
+													<i class="fa fa-circle fa-stack-2x"></i>
+													<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+												</span>
+												</a>
+											</li>
+										</ul>
 
-                        <?php
-                        $psql_is_connected = FALSE;
-                        $psql_conn = pg_connect('host=localhost port=5432 dbname=scotchbox user=root password=root');
-                        if ($psql_conn) $psql_is_connected = TRUE;
-                        $psql_version = pg_version($psql_conn)['client'];
-                        pg_close($psql_conn);
-                        ?>
-                        <tr>
-                            <td>PostgreSQL is installed</td>
-                            <td><i class="fa fa-<?php echo ($psql_is_connected ? 'check' : 'times'); ?>"></i></td>
-                        </tr>
-                        <tr>
-                            <td>PostgreSQL is connected</td>
-                            <td><i class="fa fa-<?php echo ($psql_is_connected ? 'check' : 'times'); ?>"></i></td>
-                        </tr>
-                        <tr>
-                            <td>PostgreSQL Version</td>
-                            <td><?php echo ($psql_version ? $psql_version : 'N/A'); ?></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+										<!--toggle button-->
+										<button class="navbar-toggler hidden-lg-up pull-xs-right btn btn-secondary-outline" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">&#9776;</button>
 
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>Caching stuff</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <?php
-                        $redis = new Redis();
-                        $redis->connect('127.0.0.1', 6379);
-                        ?>
-                        <tr>
-                            <td>Redis</td>
-                            <td><i class="fa fa-<?php echo ($redis->ping() ? 'check' : 'times'); ?>"></i></td>
-                        </tr>
+										<!--nav links-->
+										<div class="collapse navbar-toggleable-md clear-xs pull-xs-right" id="exCollapsingNavbar2">
+											<ul class="nav navbar-nav">
+												<li class="nav-item">
+													<a class="nav-link" href="#"><i class="fa fa-home"></i></a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">About Me</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Work With Me</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Articles</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Testimonials</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</nav>
+						<div class="container">
+							<div class="row p-y-2">
+								<div class="col-sm-8 col-md-9">
+									<h1 class="brand animated fadeIn slideInDown">AlignUp <span class="bold">NYC</span></h1>
+								</div>
+								<div class="col-sm-4 col-md-3">
+									<div class="pull-sm-right">
+										<form id="search" class="feature-form animated fadeIn slideInDown">
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="">
+												<div class="input-group-btn">
+													<button class="btn btn-secondary"><i class="fa fa-search"></i></button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div><!--/.row-->
+						</div><!--/.container-->
+					</header>
+				</div><!--/gradient-bg-->
 
-                        <?php
-                        $memcached_running = FALSE;
-                        $memcached_version = FALSE;
-                        $memcached_version = FALSE;
-                        if (class_exists('Memcache')) :
-                            $m = new Memcached();
-                            if ($m->addServer('localhost', 11211)) {
-                                $memcached_running = TRUE;
-                                $memcached_version = $m->getVersion();
-                                $memcached_version = current($memcached_version);
-                            }
-                        endif;
-                        ?>
-                        <tr>
-                            <td>Memcached running</td>
-                            <td><i class="fa fa-<?php echo ($memcached_running ? 'check' : 'times'); ?>"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Memcached version</td>
-                            <td><?php echo ($memcached_version ? $memcached_version : 'N/A'); ?></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+				<!--welcome text-->
+				<div class="tagline-wrap">
+					<div class="container">
+						<div class="row">
+							<div class="tagline tagline-home col-xs-12 text-xs-center">
+								<div class="p-a-2">
+									<div class="animated fadeIn slideInUp">
+										The Physical Art of <span>Letting Go.</span> Restoring <span>Your Center.</span> Finding Home in <span>Your Body.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--/container-->
+				</div><!--/.tagline-wrap-->
+			</div><!--/.welcome-wrap-->
 
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>Node/NPM Stuff</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <tr>
-                            <td>Grunt</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
+			<section class="p-y-4">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="lead">
+								<p>AlignUp merges the principles of physics with the pleasure we feel as humans when we allow gravity and the ground to support us, releasing the need to hold ourselves. The breath is the invitation to let all healing happen; threading through our entire structural, neurogenic and muscular bodies. When we learn to breathe as our bodies were designed to, our bodies respond with instant relaxation, peace, and healing.</p>
+								<p class="feature-text p-y-2 m-b-2 text-xs-center">You’re invited to explore the body your body wants to be -
+									<br class="hidden-lg-down">what it contains in this very moment.</p>
+							</div>
+						</div>
+					</div><!--/.row-->
+					<div id="home-tiles" class="row p-t-1">
+						<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+							<div id="home-tile-1" class="card card-fancy animated">
+								<div class="card-block">
+									<h4 class="card-title"><span>Chronic Pain</span></h4>
+									<div class="card-text text-xs-center">
+										<span class="fa-stack fa-lg card-icon">
+											<i class="fa fa-circle-thin fa-stack-2x"></i>
+											<i class="fa fa-bolt fa-stack-1x"></i>
+										</span>
+										<p>Where pain really comes from, and how to deal with it once and for all.</p>
+										<a href="#" class="btn btn-secondary btn-sm">Read More</a>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                        <tr>
-                            <td>Bower</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
+						<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+							<div id="home-tile-2" class="card card-fancy animated">
+								<div class="card-block">
+									<h4 class="card-title"><span>Trauma</span></h4>
+									<div class="card-text text-xs-center">
+										<span class="fa-stack fa-lg card-icon">
+											<i class="fa fa-circle-thin fa-stack-2x"></i>
+											<i class="fa fa-heart-o fa-stack-1x"></i>
+										</span>
+										<p>Explore how to relieve trauma and long-term stress in a fast paced world.</p>
+										<a href="#" class="btn btn-secondary btn-sm">Read More</a>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                        <tr>
-                            <td>Yeoman</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
+						<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+							<div id="home-tile-3" class="card card-fancy animated">
+								<div class="card-block">
+									<h4 class="card-title"><span>The Science</span></h4>
+									<div class="card-text text-xs-center">
+										<span class="fa-stack fa-lg card-icon">
+											<i class="fa fa-circle-thin fa-stack-2x"></i>
+											<i class="fa fa-user-md fa-stack-1x"></i>
+										</span>
+										<p>Cutting edge research on physiology, PTSD, stress, and pain relief.</p>
+										<a href="#" class="btn btn-secondary btn-sm">Read More</a>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                        <tr>
-                            <td>Gulp</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
+						<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+							<div id="home-tile-4" class="card card-fancy animated">
+								<div class="card-block">
+									<h4 class="card-title"><span>Articles</span></h4>
+									<div class="card-text text-xs-center">
+										<span class="fa-stack fa-lg card-icon">
+											<i class="fa fa-circle-thin fa-stack-2x"></i>
+											<i class="fa fa-newspaper-o fa-stack-1x"></i>
+										</span>
+										<p>Read our original articles and content at the AlignUp blog.</p>
+										<a href="#" class="btn btn-secondary btn-sm">Read More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--/.row-->
+				</div><!--/.container-->
+			</section>
 
-                        <tr>
-                            <td>Browsersync</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>PM2</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>Laravel Stuff</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <tr>
-                            <td>Laravel Installer</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Laravel Envoy</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Blackfire Profiler</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>MySQL Database Credentials</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <tr>
-                            <td>Hostname</td>
-                            <td>localhost</td>
-                        </tr>
-                        <tr>
-                            <td>Username</td>
-                            <td>root</td>
-                        </tr>
-                        <tr>
-                            <td>Password</td>
-                            <td>root</td>
-                        </tr>
-                        <tr>
-                            <td>Database</td>
-                            <td>scotchbox</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>PostgreSQL Database Credentials</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <tr>
-                            <td>Hostname</td>
-                            <td>localhost</td>
-                        </tr>
-                        <tr>
-                            <td>Username</td>
-                            <td>root</td>
-                        </tr>
-                        <tr>
-                            <td>Password</td>
-                            <td>root</td>
-                        </tr>
-                        <tr>
-                            <td>Database</td>
-                            <td>scotchbox</td>
-                        </tr>
-                        <tr>
-                            <td>Port</td>
-                            <td>5432</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>MongoDB Credentials</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <tr>
-                            <td>Hostname</td>
-                            <td>localhost</td>
-                        </tr>
-                        <tr>
-                            <td>Database</td>
-                            <td>scotchbox</td>
-                        </tr>
-                        <tr>
-                            <td>Port</td>
-                            <td>27017</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>Mailcatcher</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <tr>
-                            <td>Enable it first with</td>
-                            <td>mailcatcher --http-ip=0.0.0.0</td>
-                        </tr>
-                        <tr>
-                            <td>URL</td>
-                            <td>http://192.168.33.10:1080</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-
-
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>SSH Credentials</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <tr>
-                            <td>SSH Host</td>
-                            <td><?php echo $_SERVER['SERVER_ADDR']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>SSH User</td>
-                            <td>vagrant</td>
-                        </tr>
-                        <tr>
-                            <td>SSH Password</td>
-                            <td>vagrant</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>All PHP Modules</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <?php
-                        $modules = get_loaded_extensions();
-                        asort($modules);
-                        foreach ($modules as $extension) :
-                        ?>
-                        <tr>
-                            <td><?php echo $extension; ?></td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                        <?php endforeach; ?>
-                    </table>
-                </div>
-            </div>
-
-        </div>
-    </article>
-
-    <footer id="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="http://box.scotch.io">Scotch Box</a> by <a href="http://scotch.io">scotch.io</a>.
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- Scripts -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-</body>
+		</div><!--/.sfooter-content-->
+		<footer class="footer p-y-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 m-b-1">
+						<div class="h3">AlignUp <span class="bold">NYC</span></div>
+						<ul class="nav navbar-nav">
+							<li class="nav-item nav-icon">
+								<a class="nav-link icon" href="#">
+									<span class="sr-only">facebook</span>
+									<span class="fa-stack">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+							<li class="nav-item nav-icon">
+								<a class="nav-link icon" href="#">
+									<span class="sr-only">YouTube</span>
+									<span class="fa-stack">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+							<li class="nav-item nav-icon">
+								<a class="nav-link icon" href="#">
+									<span class="sr-only">instagram</span>
+									<span class="fa-stack">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+							<li class="nav-item nav-icon">
+								<a class="nav-link icon" href="#">
+									<span class="sr-only">twitter</span>
+									<span class="fa-stack">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-lg-offset-3 m-b-1">
+						<h5>Subscribe</h5>
+						<form id="sign-up" class="feature-form">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="">
+								<div class="input-group-btn">
+									<button class="btn btn-secondary" type="button">Go!</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div><!--/.row-->
+			</div><!--/.container-->
+		</footer>
+	</body>
 </html>
