@@ -8,6 +8,9 @@
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+		<!--Select Styles from Bootstrap 4.0.0-alpha -->
+		<link rel="stylesheet" href="lib/css/bootstrap-4-alpha-utils.css">
+
 		<!--fontawesome-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -44,20 +47,18 @@
 	<body class="sfooter">
 		<div class="sfooter-content">
 
-			<div class="content-header-wrap">
+			<div class="content-header-wrap p-t-4">
 				<header>
-					<nav class="navbar navbar-default navbar-fixed-top">
+					<nav class="navbar navbar-dark navbar-fixed-top">
 						<div class="container">
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
+									<i class="fa fa-bars fa-lg"></i>
 								</button>
 
 								<!--social icons-->
-								<ul class="nav navbar-nav social-nav">
+								<ul class="nav navbar-nav icon-nav">
 									<li class="nav-item nav-icon">
 										<a class="nav-link icon" href="#">
 											<span class="sr-only">facebook</span>
@@ -100,10 +101,10 @@
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#">Link</a></li>
-									<li><a href="#">Link</a></li>
-									<li><a href="#">Link</a></li>
-									<li><a href="#">Link</a></li>
+									<li><a class="nav-link" href="#">Link</a></li>
+									<li><a class="nav-link" href="#">Link</a></li>
+									<li><a class="nav-link" href="#">Link</a></li>
+									<li><a class="nav-link" href="#">Link</a></li>
 								</ul>
 							</div><!-- /.navbar-collapse -->
 						</div><!-- /.container-fluid -->
@@ -117,9 +118,9 @@
 								<div class="pull-sm-right">
 									<form id="search" class="feature-form">
 										<div class="input-group">
-											<input type="text" class="form-control" placeholder="">
+											<input type="text" class="form-control" placeholder="search our site">
 											<div class="input-group-btn">
-												<button class="btn btn-secondary"><i class="fa fa-search"></i></button>
+												<button class="btn btn-default"><i class="fa fa-search"></i></button>
 											</div>
 										</div>
 									</form>
@@ -141,7 +142,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6">
-							<h1 class="content-title">Page Title Here</h1>
+							<h1 class="content-title m-t-0">Page Title Here</h1>
 						</div>
 						<div class="col-xs-12 col-sm-6">
 							<!--breadcrumbs-->
@@ -161,14 +162,14 @@
 							<div class="share p-y-2 m-y-2">
 								<small>Share This</small>
 								<div>
-									<button class="btn btn-secondary btn-sm"><i class="fa fa-facebook-square">&nbsp;Facebook</i></button>
-									<button class="btn btn-secondary btn-sm"><i class="fa fa-twitter">&nbsp;Twitter</i></button>
-									<button class="btn btn-secondary btn-sm"><i class="fa fa-linkedin-square">&nbsp;LinkedIn</i></button>
+									<button class="btn btn-default btn-sm"><i class="fa fa-facebook-square"></i>&nbsp;Facebook</button>
+									<button class="btn btn-default btn-sm"><i class="fa fa-twitter"></i>&nbsp;Twitter</button>
+									<button class="btn btn-default btn-sm"><i class="fa fa-linkedin-square"></i>&nbsp;LinkedIn</button>
 								</div>
 							</div>
 
 							<!--comments section-->
-							<div class="bg-faded p-a-2 m-y-1">
+							<div class="m-y-1">
 								<h3 class="m-b-1">Discussion</h3>
 								<form>
 									<fieldset class="form-group">
@@ -179,7 +180,7 @@
 									<span><a href="#"><strong>Author Name</strong></a></span>
 									<small class="text-muted"><em>&nbsp;Feb. 17th 2016 12:00 p.m.</em></small>
 									<p>Irony shoreditch cray, keffiyeh heirloom pabst forage four dollar toast disrupt. Cronut hoodie post-ironic lomo next level, sustainable semiotics fashion axe selfies.</p>
-									<button class="btn btn-secondary btn-sm">Reply</button>
+									<button class="btn btn-default btn-sm">Reply</button>
 								</div>
 							</div>
 
@@ -194,7 +195,7 @@
 										<div class="card-block">
 											<h4 class="card-title"><span>Latest News</span></h4>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											<a href="#" class="btn btn-secondary btn-sm pull-xs-right">Read More</a>
+											<a href="#" class="btn btn-default btn-sm pull-xs-right">Read More</a>
 											<div class="clearfix"></div>
 										</div>
 									</div>
@@ -205,7 +206,7 @@
 										<div class="card-block">
 											<h4 class="card-title"><span>Latest Articles</span></h4>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											<a href="#" class="btn btn-secondary btn-sm pull-xs-right">Read More</a>
+											<a href="#" class="btn btn-default btn-sm pull-xs-right">Read More</a>
 											<div class="clearfix"></div>
 										</div>
 									</div>
@@ -214,9 +215,9 @@
 								<div class="col-xs-12 col-sm-6 col-lg-12">
 									<div class="card card-widget">
 										<div class="card-block">
-											<h4 class="card-title">Hot Topics</h4>
+											<h4 class="card-title"><span>Hot Topics</span></h4>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											<a href="#" class="btn btn-secondary btn-sm pull-xs-right">Read More</a>
+											<a href="#" class="btn btn-default btn-sm pull-xs-right">Read More</a>
 											<div class="clearfix"></div>
 										</div>
 									</div>
@@ -233,8 +234,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 m-b-1">
-						<div class="h3">AlignUp <span class="bold">NYC</span></div>
-						<ul class="nav navbar-nav">
+						<div class="h2 m-a-0">AlignUp <span class="bold">NYC</span></div>
+						<ul class="nav navbar-nav icon-nav">
 							<li class="nav-item nav-icon">
 								<a class="nav-link icon" href="#">
 									<span class="sr-only">facebook</span>
@@ -275,12 +276,12 @@
 						<div class="clearfix"></div>
 					</div>
 					<div class="col-lg-3 col-sm-6 col-lg-offset-3 m-b-1">
-						<h5>Subscribe</h5>
+						<h4 class="m-t-0">Subscribe</h4>
 						<form id="sign-up" class="feature-form">
 							<div class="input-group">
-								<input type="text" class="form-control" placeholder="">
+								<input type="text" class="form-control" placeholder="email address">
 								<div class="input-group-btn">
-									<button class="btn btn-secondary" type="button">Go!</button>
+									<button class="btn btn-default" type="button">Go!</button>
 								</div>
 							</div>
 						</form>

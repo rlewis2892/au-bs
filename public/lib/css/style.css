@@ -104,6 +104,26 @@ body {
 }
 
 /***********************************
+* Content Layout
+************************************/
+.content-header-wrap {
+	color: #fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#da70d6+0,bf1aa9+100 */
+	background: orchid;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, orchid 0%, #bf1aa9 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, orchid 0%, #bf1aa9 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, orchid 0%, #bf1aa9 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da70d6', endColorstr='#bf1aa9',GradientType=0 );
+	/* IE6-9 */ }
+
+h1.content-title {
+	font-weight: 300; }
+
+/***********************************
 * Header and Branding
 ************************************/
 .brand {
@@ -157,6 +177,13 @@ body {
 	letter-spacing: -0.5px;
 }
 
+.breadcrumb {
+	background-color: transparent;
+	padding-left: 0;
+	padding-right: 0;
+	font-size: 0.875rem;
+}
+
 /***********************************
 * Cards
 ************************************/
@@ -164,7 +191,7 @@ img.card-img.img-fluid, .carousel-inner > .carousel-item > img.card-img,
 .carousel-inner > .carousel-item > a > img.card-img {
 	width: 100%; }
 
-.card-fancy {
+.card-fancy, .card-widget {
 	border: 4px solid orchid;
 	padding-top: 0.5rem;
 	margin-bottom: 2rem;
@@ -181,8 +208,13 @@ img.card-img.img-fluid, .carousel-inner > .carousel-item > img.card-img,
 	right: 0; }
 
 .card-fancy .card-title > span {
-	background: white;
+	background: #fff;
 	padding: 0 1.5rem; }
+
+.card-widget .card-title > span {
+	background: #fff;
+	padding: 0 1rem;
+}
 
 .card-icon {
 	margin-bottom: 0.75rem; }
@@ -191,9 +223,20 @@ img.card-img.img-fluid, .carousel-inner > .carousel-item > img.card-img,
 	color: #aaa;
 	opacity: 0.65; }
 
-/***********************************
-* Header
-************************************/
+.card-widget .card-title {
+	font-family: "Nothing You Could Do", sans-serif;
+	color: orchid;
+	position: absolute;
+	top: -1.2rem;
+	font-weight: bold;
+	left: 1rem;
+	right: 0;
+	font-size: 20px;
+}
+
+.card-widget .card-block {
+	padding-top: 2rem;
+}
 
 /***********************************
 * Main Navbar
