@@ -158,8 +158,38 @@ body {
 }
 
 /***********************************
-* Content Layout
+* Cards
 ************************************/
+img.card-img.img-fluid, .carousel-inner > .carousel-item > img.card-img,
+.carousel-inner > .carousel-item > a > img.card-img {
+	width: 100%; }
+
+.card-fancy {
+	border: 4px solid orchid;
+	padding-top: 0.5rem;
+	margin-bottom: 2rem;
+	border-radius: 1.5rem;
+	padding-bottom: 0.5rem;
+	background: white;
+	color: #555; }
+
+.card-fancy .card-title {
+	position: absolute;
+	top: -2.2rem;
+	text-align: center;
+	left: 0;
+	right: 0; }
+
+.card-fancy .card-title > span {
+	background: white;
+	padding: 0 1.5rem; }
+
+.card-icon {
+	margin-bottom: 0.75rem; }
+
+#home-tiles .card-icon {
+	color: #aaa;
+	opacity: 0.65; }
 
 /***********************************
 * Header

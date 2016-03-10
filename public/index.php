@@ -121,7 +121,7 @@
 									<div class="pull-sm-right">
 										<form id="search" class="feature-form animated fadeIn slideInDown">
 											<div class="input-group">
-												<input type="text" class="form-control" placeholder="search">
+												<input type="text" class="form-control" placeholder="search our site">
 												<div class="input-group-btn">
 													<button class="btn btn-default"><i class="fa fa-search"></i></button>
 												</div>
@@ -165,14 +165,14 @@
 						<div class="col-md-3 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
 							<div id="home-tile-1" class="card card-fancy animated">
 								<div class="card-block">
-									<h4 class="card-title"><span>Chronic Pain</span></h4>
+									<h3 class="card-title"><span>Chronic Pain</span></h3>
 									<div class="card-text text-xs-center">
 										<span class="fa-stack fa-lg card-icon">
 											<i class="fa fa-circle-thin fa-stack-2x"></i>
 											<i class="fa fa-bolt fa-stack-1x"></i>
 										</span>
 										<p>Where pain really comes from, and how to deal with it once and for all.</p>
-										<a href="#" class="btn btn-primary">Read More</a>
+										<a href="#" class="btn btn-default">Read More</a>
 									</div>
 								</div>
 							</div>
@@ -181,14 +181,14 @@
 						<div class="col-md-3 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
 							<div id="home-tile-2" class="card card-fancy animated">
 								<div class="card-block">
-									<h4 class="card-title"><span>Trauma</span></h4>
+									<h3 class="card-title"><span>Trauma</span></h3>
 									<div class="card-text text-xs-center">
 										<span class="fa-stack fa-lg card-icon">
 											<i class="fa fa-circle-thin fa-stack-2x"></i>
 											<i class="fa fa-heart-o fa-stack-1x"></i>
 										</span>
 										<p>Explore how to relieve trauma and long-term stress in a fast paced world.</p>
-										<a href="#" class="btn btn-primary">Read More</a>
+										<a href="#" class="btn btn-default">Read More</a>
 									</div>
 								</div>
 							</div>
@@ -197,14 +197,14 @@
 						<div class="col-md-3 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
 							<div id="home-tile-3" class="card card-fancy animated">
 								<div class="card-block">
-									<h4 class="card-title"><span>The Science</span></h4>
+									<h3 class="card-title"><span>The Science</span></h3>
 									<div class="card-text text-xs-center">
 										<span class="fa-stack fa-lg card-icon">
 											<i class="fa fa-circle-thin fa-stack-2x"></i>
 											<i class="fa fa-user-md fa-stack-1x"></i>
 										</span>
 										<p>Cutting edge research on physiology, PTSD, stress, and pain relief.</p>
-										<a href="#" class="btn btn-primary">Read More</a>
+										<a href="#" class="btn btn-default">Read More</a>
 									</div>
 								</div>
 							</div>
@@ -213,14 +213,14 @@
 						<div class="col-md-3 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
 							<div id="home-tile-4" class="card card-fancy animated">
 								<div class="card-block">
-									<h4 class="card-title"><span>Articles</span></h4>
+									<h3 class="card-title"><span>Articles</span></h3>
 									<div class="card-text text-xs-center">
 										<span class="fa-stack fa-lg card-icon">
 											<i class="fa fa-circle-thin fa-stack-2x"></i>
 											<i class="fa fa-newspaper-o fa-stack-1x"></i>
 										</span>
 										<p>Read our original articles and content at the AlignUp blog.</p>
-										<a href="#" class="btn btn-primary">Read More</a>
+										<a href="#" class="btn btn-default">Read More</a>
 									</div>
 								</div>
 							</div>
@@ -279,7 +279,7 @@
 						<h4 class="m-t-0">Subscribe</h4>
 						<form id="sign-up" class="feature-form">
 							<div class="input-group">
-								<input type="text" class="form-control" placeholder="">
+								<input type="text" class="form-control" placeholder="email address">
 								<div class="input-group-btn">
 									<button class="btn btn-default" type="button">Go!</button>
 								</div>
