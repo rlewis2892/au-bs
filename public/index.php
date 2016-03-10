@@ -51,14 +51,12 @@
 				<div class="gradient-bg sfooter-content p-y-4">
 
 					<header>
-						<nav class="navbar navbar-default navbar-fixed-top">
+						<nav class="navbar navbar-dark navbar-fixed-top">
 							<div class="container">
 								<div class="navbar-header">
 									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
+										<i class="fa fa-bars fa-lg"></i>
 									</button>
 
 									<!--social icons-->
@@ -105,10 +103,10 @@
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 									<ul class="nav navbar-nav navbar-right">
-										<li><a href="#">Link</a></li>
-										<li><a href="#">Link</a></li>
-										<li><a href="#">Link</a></li>
-										<li><a href="#">Link</a></li>
+										<li><a class="nav-link" href="#">Link</a></li>
+										<li><a class="nav-link" href="#">Link</a></li>
+										<li><a class="nav-link" href="#">Link</a></li>
+										<li><a class="nav-link" href="#">Link</a></li>
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</div><!-- /.container-fluid -->
@@ -236,7 +234,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 m-b-1">
-						<div class="h3">AlignUp <span class="bold">NYC</span></div>
+						<div class="h2 m-a-0">AlignUp <span class="bold">NYC</span></div>
 						<ul class="nav navbar-nav icon-nav">
 							<li class="nav-item nav-icon">
 								<a class="nav-link icon" href="#">
@@ -278,7 +276,7 @@
 						<div class="clearfix"></div>
 					</div>
 					<div class="col-lg-3 col-sm-6 col-lg-offset-3 m-b-1">
-						<h4>Subscribe</h4>
+						<h4 class="m-t-0">Subscribe</h4>
 						<form id="sign-up" class="feature-form">
 							<div class="input-group">
 								<input type="text" class="form-control" placeholder="">

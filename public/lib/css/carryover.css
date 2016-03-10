@@ -217,10 +217,6 @@ img.card-img.img-fluid, .carousel-inner > .carousel-item > img.card-img,
 	-o-transition: all 250ms ease-in-out;
 	transition: all 250ms ease-in-out; }
 
-li.nav-item {
-
-}
-
 a.nav-link.icon {
 	padding-left: 0;
 	padding-right: 0; }

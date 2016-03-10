@@ -94,7 +94,7 @@ body {
 	background: url("../img/alignup-home.jpg") no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
-	min-height: 30rem;
+	min-height: 33rem;
 	color: #fff;
 }
 
@@ -143,6 +143,13 @@ body {
 	font-size: 1.3em;
 	font-weight: bold; }
 
+@media only screen and (max-width: 768px) {
+	.tagline-home {
+		font-size: 1.3rem;
+		line-height: 1.8rem;
+	}
+}
+
 /***********************************
 * Bootstrap Customizations
 ************************************/
@@ -161,10 +168,71 @@ body {
 /***********************************
 * Main Navbar
 ************************************/
+@media only screen and (max-width: 768px) {
+
+	.navbar-dark {
+		background-color: rgba(0,0,0,0.75);
+	}
+
+	.navbar-nav.icon-nav {
+		margin: 5px;
+	}
+
+	.navbar-nav > li.nav-icon {
+		float: left;
+	}
+}
+
+.navbar-toggle {
+	z-index: 9999;
+}
+
+.navbar {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out; }
+
+.navbar-nav > li > a:hover {
+	background-color: transparent;
+}
+
+a.nav-link.icon {
+	padding-left: 0;
+	padding-right: 0; }
+
+.navbar-collapse .navbar-nav .nav-link {
+	font-size: 0.875rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff; }
+
+.navbar-shadow {
+	-webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+}
+
+.navbar-nav .nav-item + .nav-icon {
+	margin-left: 0.8rem; }
+
+.navbar-light button .fa {
+	color: rgba(0,0,0,0.35);
+}
+
+footer a.nav-link.icon,
+.navbar-dark .navbar-nav .icon {
+	color: rgba(255, 255, 255, 0.5) !important; }
+
 
 /***********************************
 * Social Icon Nav
 ************************************/
+a.nav-link.icon {
+	padding: 10px 0;
+}
 
 /***********************************
 * Feature Forms
