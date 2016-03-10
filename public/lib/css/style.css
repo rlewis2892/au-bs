@@ -90,6 +90,65 @@ body {
 /***********************************
 * Home Layout
 ************************************/
+.welcome-wrap {
+	background: url("../img/alignup-home.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 30rem;
+	color: #fff;
+}
+
+@media only screen and (min-width: 992px) {
+	.welcome-wrap {
+		min-height: 40rem; }
+}
+
+/***********************************
+* Header and Branding
+************************************/
+.brand {
+	font-family: "Raleway", Helvetica, Arial, sans-serif;
+	text-shadow: 2px 2px 0 black;
+	color: #fff;
+	margin-top: 0;
+}
+
+/***********************************
+* Home Tagline
+************************************/
+.tagline-wrap {
+	background-color: rgba(255, 0, 255, 0.4); }
+
+.tagline {
+	line-height: 1.2em;
+	color: #fff;
+	text-shadow: 1px 1px 0 #000; }
+
+.tagline-home {
+	font-size: 1.65em; }
+
+.tagline-home span {
+	font-family: "Nothing You Could Do", sans-serif;
+	font-size: 1.2em;
+	letter-spacing: -1px;
+	padding: 0 5px; }
+
+.tagline-content {
+	font-size: 1em;
+	position: relative;
+	top: -15px; }
+
+.tagline-content span {
+	font-family: "Nothing You Could Do", sans-serif;
+	font-size: 1.3em;
+	font-weight: bold; }
+
+/***********************************
+* Bootstrap Customizations
+************************************/
+.lead {
+	letter-spacing: -0.5px;
+}
 
 /***********************************
 * Content Layout
@@ -100,12 +159,54 @@ body {
 ************************************/
 
 /***********************************
-* Navbar
+* Main Navbar
 ************************************/
 
 /***********************************
-* Forms
+* Social Icon Nav
 ************************************/
+
+/***********************************
+* Feature Forms
+************************************/
+.feature-form .form-control {
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	background: transparent;
+	border-color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.75);
+	height: 38px;
+}
+
+.feature-form .input-group-addon,
+.feature-form .input-group-btn > button {
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	border-color: #fff;
+	background: #fff;
+	height: 38px;
+}
+
+/* Form placeholder text  */
+.feature-form .form-control::-moz-placeholder {
+	color: rgba(255,255,255,0.8);
+}
+
+.feature-form .form-control:-moz-placeholder {
+	color: rgba(255,255,255,0.8);
+}
+
+.feature-form .form-control::-webkit-input-placeholder {
+	color: rgba(255,255,255,0.8);
+}
+
+.feature-form .form-control:-ms-input-placeholder {
+	color: rgba(255,255,255,0.8);
+}
+
+.feature-form .form-control::placeholder {
+	color: rgba(255,255,255,0.8);
+}
 
 /***********************************
 * Footer

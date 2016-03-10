@@ -62,7 +62,7 @@
 									</button>
 
 									<!--social icons-->
-									<ul class="nav navbar-nav social-nav">
+									<ul class="nav navbar-nav icon-nav">
 										<li class="nav-item nav-icon">
 											<a class="nav-link icon" href="#">
 												<span class="sr-only">facebook</span>
@@ -123,7 +123,7 @@
 									<div class="pull-sm-right">
 										<form id="search" class="feature-form animated fadeIn slideInDown">
 											<div class="input-group">
-												<input type="text" class="form-control" placeholder="">
+												<input type="text" class="form-control" placeholder="search">
 												<div class="input-group-btn">
 													<button class="btn btn-default"><i class="fa fa-search"></i></button>
 												</div>
@@ -237,7 +237,7 @@
 				<div class="row">
 					<div class="col-sm-6 m-b-1">
 						<div class="h3">AlignUp <span class="bold">NYC</span></div>
-						<ul class="nav navbar-nav">
+						<ul class="nav navbar-nav icon-nav">
 							<li class="nav-item nav-icon">
 								<a class="nav-link icon" href="#">
 									<span class="sr-only">facebook</span>
@@ -278,12 +278,12 @@
 						<div class="clearfix"></div>
 					</div>
 					<div class="col-lg-3 col-sm-6 col-lg-offset-3 m-b-1">
-						<h5>Subscribe</h5>
+						<h4>Subscribe</h4>
 						<form id="sign-up" class="feature-form">
 							<div class="input-group">
 								<input type="text" class="form-control" placeholder="">
 								<div class="input-group-btn">
-									<button class="btn btn-secondary" type="button">Go!</button>
+									<button class="btn btn-default" type="button">Go!</button>
 								</div>
 							</div>
 						</form>
